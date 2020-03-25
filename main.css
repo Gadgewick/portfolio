@@ -13,7 +13,7 @@
   .galleryDisc{
     bottom: 0px;
     left: 5px;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   ul.galleryContainer li {
@@ -59,15 +59,15 @@
   }
 
   .galleryDisc{
-    bottom: 30px;
+    bottom: 5px;
     left: 25px;
-    font-size: 20px;
+    font-size: 16px;
   }
 
   li.gallerySelector:hover .galleryDisc{
-    bottom: 30%;
-    left: 30%;
-    font-size: 25px;
+    bottom: 25%;
+    left: 25%;
+    font-size: 20px;
   }
 
   ul.galleryContainer li {
@@ -207,7 +207,6 @@ footer {
 .navbar a:hover {
   background-color: #20314b;
   color: #fed27f;
-  padding-top: 2%;
 }
 
 .navbar a.active {
