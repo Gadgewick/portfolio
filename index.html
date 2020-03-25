@@ -9,23 +9,30 @@
     <title>Document</title>
 </head>
 <body>
-    <nav role ="navigation">
-        <img class="logo" src="images/orvisualsLogoColor_001-01.png">
-        <div id="wrapper">
-            <img class="hover"  src="home.png">
-            <img class="text" id="home" src="text_home.png">
+    <nav class="navbar" role ="navigation">
+        <div class="centerNavContent"><img class="logo" src="images/orvisualsLogoColor_001-01.png">
+            <div class="rightNav">
+                <a href="#" class="home">Home</a>
+                <a href="#" class="bio">Bio</a>
+                <a href="#" class="skills">Skills</a>
+                <a href="#" class="gallery" >Gallery</a>
+                <a href="#" class="contactInfo">Contact Info</a>
+            </div>
         </div>
-        <a class="bio">Bio</a>
-        <a class="skills">Skills</a>
-        <a class="gallery" >Gallery</a>
-        <a class="contactInfo">Contact Info</a>
     </nav>
     <main role="main">
-        <header role="banner" class="title">
-            <h1>title here</h1>
-        </header>
+        
+        
+        <section class="homePage content">
+            <header role="banner">
+                <img class="homePage-image" src="images/orvisualsLogoColor_001-01.png">
+                <h1 class="title">Orvisuals</h1>
+            </header> 
+            
+        </section>
 
-        <section class="homePage">
+        <section class="bioPage content hidden">
+            <h1 class="title">Bio</h1>
             <p>I am a Graphic Developer with a Bachelor's of science in 
                 Graphic Design with a focus on development. Problem 
                 solving is my jam! Creativity and technology, I bring 
@@ -35,20 +42,105 @@
                 houses, traveling to Tennessee or chilling with my cats. 
                 I am currently learning the ins and outs of Touchdesigner.</p> 
         </section>
-        <section class="bioPage hidden">
+
+        <section class="skillsPage content hidden">
+            <h1 class="title">Skills</h1>
+            <p>My main experience is design work for front-end interfaces. I also have experience with the full Adobe suite including a particular fancy for motion graphics.</p>
+            <p>Backend wise I primarily work with HTML5, CSS and Javascript. I have played around with Wordpress and Python. I am currently learning on the side TouchDesigner and threeJS.</p>
         </section>
-        <section class="skillsPage hidden">
+
+        <section class="galleryPage content hidden">
+            <h1 class="title">Gallery</h1>
+            <ul class="galleryContainer">
+                <li class="gallerySelector">
+                    <a href="#">
+                        <div class="galleryImage">
+                            <img src="images/orvisualsLogoColor_001-01.png" class="galleryPic" alt="Filler Image">
+                        </div>
+                        <div class="galleryDisc">
+                            <h3>Filler Image</h3>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="gallerySelector">
+                    <a href="#">
+                        <div class="galleryImage">
+                            <img src="images/orvisualsLogoColor_001-01.png" class="galleryPic" alt="Filler Image">
+                        </div>
+                        <div class="galleryDisc">
+                            <h3>Filler Image</h3>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="gallerySelector">
+                    <a href="#">
+                        <div class="galleryImage">
+                            <img src="images/orvisualsLogoColor_001-01.png" class="galleryPic" alt="Filler Image">
+                        </div>
+                        <div class="galleryDisc">
+                            <h3>Filler Image</h3>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="gallerySelector">
+                    <a href="#">
+                        <div class="galleryImage">
+                            <img src="images/orvisualsLogoColor_001-01.png" class="galleryPic" alt="Filler Image">
+                        </div>
+                        <div class="galleryDisc">
+                            <h3>Filler Image</h3>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="gallerySelector">
+                    <a href="#">
+                        <div class="galleryImage">
+                            <img src="images/orvisualsLogoColor_001-01.png" class="galleryPic" alt="Filler Image">
+                        </div>
+                        <div class="galleryDisc">
+                            <h3>Filler Image</h3>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="gallerySelector">
+                    <a href="#">
+                        <div class="galleryImage">
+                            <img src="images/orvisualsLogoColor_001-01.png" class="galleryPic" alt="Filler Image">
+                        </div>
+                        <div class="galleryDisc">
+                            <h3>Filler Image</h3>
+                        </div>
+
+                    </a>
+                </li>
+            </ul>
         </section>
-        <section class="picPage hidden">
+
+        <section class="contactInfoPage content hidden">
+            <h1 class="title">Contact Information</h1>
+            <label class="contactInfoLabel" for="name">Name:</label>
+            <textarea class="name infoForm" placeholder="John Doe" name="Name"></textarea>
+            <label class="contactInfoLabel" for="email">Email:</label>
+            <textarea class="email infoForm" placeholder="xyzemail@somewhere.com" name="Email"></textarea>
+            <label class="contactInfoLabel" for="projectDeets">Project Details:</label>
+            <textarea class="projectDeets infoForm" placeholder="Message" name="msg"></textarea>
+            <input type="submit" value="Submit">
         </section>
-        <section class="contactPage hidden">
-        </section>
+
         <section>
             background noise/animation here
         </section>
-        <footer role="content-info">footer</footer>
+
+        <footer role="content-info">© 2020 Copyright: Philip Orvis</footer>
     </main>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
     <script src="index.js"></script>
-    <script src="jquery-3.4.1.min.js"></script>
 </body>
 </html>
