@@ -33,10 +33,10 @@
 
         <section class="bioPage content hidden">
             <h1 class="title">Bio</h1>
-            <p>I am a Graphic Developer with a Bachelor's of science in 
+            <p>I am a Graphic Developer with a Bachelor's of Science in 
                 Graphic Design with a focus on development. Problem 
                 solving is my jam! Creativity and technology, I bring 
-                hand in hand. I enjoy keeping up to date on the latest 
+                hand in hand. I enjoy keeping up-to-date on the latest 
                 tech and trends.</p> 
             <p>From beyond the screen I can be found in local coffee 
                 houses, traveling to Tennessee or chilling with my cats. 
@@ -46,13 +46,24 @@
         <section class="skillsPage content hidden">
             <h1 class="title">Skills</h1>
             <p>My main experience is design work for front-end interfaces. I also have experience with the full Adobe suite including a particular fancy for motion graphics.</p>
-            <p>Backend wise I primarily work with HTML5, CSS and Javascript. I have played around with Wordpress and Python. I am currently learning on the side TouchDesigner and threeJS.</p>
+            <p>I am also experienced with HTML5, CSS and Javascript. I have played around with Wordpress and Python. I am currently learning TouchDesigner and threeJS.</p>
         </section>
 
         <section class="galleryPage content hidden">
             <h1 class="title">Gallery</h1>
             <ul class="galleryContainer">
-                <li class="gallerySelector">
+                <li class="gallerySelector imageClickEvent">
+                    <a href="https://gadgewick.github.io/CyberPunk_quiz/">
+                        <div class="galleryImage">
+                            <img src="images/project1-01.png" class="galleryPic" alt="Quiz App">
+                        </div>
+                        <div class="galleryDisc">
+                            <h3>Quiz App</h3>
+                        </div>
+
+                    </a>
+                </li>
+                <li class="gallerySelector imageClickEvent">
                     <a href="#">
                         <div class="galleryImage">
                             <img src="images/orvisualsLogoColor_001-01.png" class="galleryPic" alt="Filler Image">
@@ -63,7 +74,7 @@
 
                     </a>
                 </li>
-                <li class="gallerySelector">
+                <li class="gallerySelector imageClickEvent">
                     <a href="#">
                         <div class="galleryImage">
                             <img src="images/orvisualsLogoColor_001-01.png" class="galleryPic" alt="Filler Image">
@@ -74,7 +85,7 @@
 
                     </a>
                 </li>
-                <li class="gallerySelector">
+                <li class="gallerySelector imageClickEvent">
                     <a href="#">
                         <div class="galleryImage">
                             <img src="images/orvisualsLogoColor_001-01.png" class="galleryPic" alt="Filler Image">
@@ -85,7 +96,7 @@
 
                     </a>
                 </li>
-                <li class="gallerySelector">
+                <li class="gallerySelector imageClickEvent">
                     <a href="#">
                         <div class="galleryImage">
                             <img src="images/orvisualsLogoColor_001-01.png" class="galleryPic" alt="Filler Image">
@@ -96,18 +107,7 @@
 
                     </a>
                 </li>
-                <li class="gallerySelector">
-                    <a href="#">
-                        <div class="galleryImage">
-                            <img src="images/orvisualsLogoColor_001-01.png" class="galleryPic" alt="Filler Image">
-                        </div>
-                        <div class="galleryDisc">
-                            <h3>Filler Image</h3>
-                        </div>
-
-                    </a>
-                </li>
-                <li class="gallerySelector">
+                <li class="gallerySelector imageClickEvent">
                     <a href="#">
                         <div class="galleryImage">
                             <img src="images/orvisualsLogoColor_001-01.png" class="galleryPic" alt="Filler Image">
@@ -133,7 +133,7 @@
         </section>
 
         <section>
-            background noise/animation here
+            <canvas data-processing-sources="waves.pde"></canvas>
         </section>
 
         <footer role="content-info">© 2020 Copyright: Philip Orvis</footer>
@@ -142,5 +142,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script type="text/javascript" src="processing.js"></script>
 </body>
 </html>
