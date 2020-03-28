@@ -279,6 +279,10 @@ ul.galleryContainer li {
   position: absolute;
 }
 
+.galleryImage {
+  padding-top: 3%;
+}
+
 li.gallerySelector a {
   display: block;
   overflow: hidden;
