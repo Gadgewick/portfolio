@@ -1,6 +1,15 @@
 @media screen and (max-width: 600px) {
+
+.content{
+  margin-bottom: 0px;
+}
+
+  #main{
+    height:1000px;
+  }
+
   nav {
-    bottom:25px;
+    bottom:60px;
     position: fixed;
     overflow: hidden;
     width: 100%;
@@ -10,9 +19,9 @@
    width:80px;
   }
 
-  .galleryDisc{
-    bottom: 0px;
-    left: 5px;
+  .galleryProjectTitle{
+    top: 10px;
+    left: 10px;
     font-size: 12px;
   }
 
@@ -24,14 +33,31 @@
     width: 70%;
   }
 
+  .galleryDisc {
+    font-size: 12px;
+  }
+
   ul.galleryContainer {
     margin: 0px;
     padding: 0;
 }
 
+.galleryProjectLinks{
+  font-size: 10px;
+}
+
   footer {
-    font-size: 12px;
+    font-size: 10px;
   }
+
+  .footerLinks img {
+    width:5%;
+  }
+  
+  .wave{
+    margin-top: -100px;
+  }
+
 }
 
 
@@ -58,24 +84,31 @@
     margin-top: 83px;
   }
 
-  .galleryDisc{
-    bottom: 5px;
+  .galleryProjectTitle{
+    top: 5px;
     left: 25px;
     font-size: 16px;
   }
 
-  li.gallerySelector:hover .galleryDisc{
-    bottom: 25%;
-    left: 25%;
+  li.gallerySelector:hover .galleryProjectTitle{
+    top: 15px;
+    left: 50px;
     font-size: 20px;
   }
 
   ul.galleryContainer li {
     width: 45%;
   }
+  .galleryDisc {
+    font-size: 12px;
+  }
 
   .galleryPic {
     width: 70%;
+  }
+
+  .galleryProjectLinks{
+    font-size: 12px;
   }
 
   ul.galleryContainer {
@@ -84,8 +117,13 @@
 }
 
   footer {
-    font-size: 12px;
+    font-size: 14px;
   }
+
+  .footerLinks img {
+    width:4%;
+  }
+  
 }
 
 @media screen and (min-width: 1200px) {
@@ -111,15 +149,15 @@
     margin-top: 83px;
   }
 
-  .galleryDisc{
-    bottom: 30px;
-    left: 25px;
+  .galleryProjectTitle{
+    top: 30px;
+    left: 20px;
     font-size: 20px;
   }
 
-  li.gallerySelector:hover .galleryDisc{
-    bottom: 36%;
-    left: 36%;
+  li.gallerySelector:hover .galleryProjectTitle{
+    top: 40%;
+    left: 40%;
     font-size: 25px;
   }
 
@@ -131,6 +169,14 @@
     width: 70%;
   }
 
+  .galleryDisc {
+    font-size: 16px;
+  }
+
+  .galleryProjectLinks{
+    font-size: 16px;
+  }
+
   ul.galleryContainer {
     margin-left:3%;
     padding: 20px;
@@ -139,6 +185,11 @@
   footer {
     font-size: 12px;
   }
+
+  .footerLinks img {
+    width:2%;
+  }
+  
 }
 
 * {
@@ -155,12 +206,17 @@ body {
   margin: 0px; 
 }
 
+#main {
+  overflow: hidden;
+}
+
 .homePage-image {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-
+  padding-top: 8%;
 }
+
 
 footer {
   position: fixed;
@@ -193,7 +249,6 @@ footer {
 .navbar {
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 .navbar a {
@@ -226,27 +281,20 @@ canvas {
   display: none;
 }
 
-header {
-  padding: 12% 0;
-}
 
 .title {
   font-family: 'Arvo', serif;
 }
 
-section .content {
-  min-height: 200px;
-  padding: 6% 0;
+.content {
   background-color: #bdc4b7;
+  padding: 3%;
 }
 
 section:nth-child(odd) {
   background-color: #f2f5f5 ;
 }
 
-.content {
-  padding:10px;
-}
 /*Gallery Page Style*/
 ul.galleryContainer {
     list-style: none;
@@ -275,8 +323,9 @@ ul.galleryContainer li {
   text-align: center;
 }
 
-.galleryDisc{
+.galleryProjectTitle{
   position: absolute;
+  transition: .2s ease;
 }
 
 .galleryImage {
@@ -302,12 +351,31 @@ li.gallerySelector:hover .galleryImage{
   opacity:0;
 }
 
-li.gallerySelector a:hover {
+li.gallerySelector:hover .galleryProjectTitle {
   color: #fed27f;
   transition: .5s ease;
   opacity:1;
 }
 
+.galleryDisc {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 0px;
+}
+
+li.gallerySelector:hover .galleryDisc {
+  color: #fed27f;
+}
+
+.galleryProjectLinks{
+  display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.galleryProjectLinks a:hover{
+  color: #fed27f;
+}
 
 /*Contact Info Style*/
 .infoForm{
@@ -341,4 +409,9 @@ input[type=submit]:hover {
 
 .contactInfoLabel {
   padding-bottom: 50px;
+}
+
+.wave{
+  width:100%;
+  height:500px;
 }
