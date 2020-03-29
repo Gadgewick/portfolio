@@ -217,6 +217,16 @@ body {
   padding-top: 8%;
 }
 
+.tagline {
+  color: #20314b;
+  animation-name: shineIn;
+  animation-duration:2s;
+}
+
+@keyframes shineIn {
+  from {color: #fed27f;}
+  to {color: #20314b;}
+}
 
 footer {
   position: fixed;
