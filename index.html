@@ -149,18 +149,18 @@
 
         <section class="contactInfoPage content hidden">
             <h1 class="title">Contact Information</h1>
-            <form action="contactForm.php" method="post">
+            <form action="contactForm.php" method="POST">
                 <div class="topInfoBox">
                     <label class="contactInfoLabel" for="name">Name:</label>
-                    <textarea class="name infoForm smallInfoBox" placeholder="John Doe" name="name"></textarea>
+                    <textarea class="name infoForm smallInfoBox" placeholder="John Doe" type ="text" name="name"></textarea>
                     <label class="contactInfoLabel" for="email">Email:</label>
-                    <textarea class="email infoForm smallInfoBox" placeholder="xyzemail@somewhere.com" name="email"></textarea>
+                    <textarea class="email infoForm smallInfoBox" placeholder="xyzemail@somewhere.com" type ="text" name="email"></textarea>
                 </div>
                 <label class="contactInfoLabel" for="email">Subject:</label>
-                <textarea class="subject infoForm" placeholder="Amazzing Idea!" name="subject"></textarea>
+                <textarea class="subject infoForm" placeholder="Amazzing Idea!" type ="text" name="subject"></textarea>
                 <label class="contactInfoLabel" for="projectDeets">Project Details:</label>
-                <textarea class="projectDeets infoForm" placeholder="This idea is great!" name="message"></textarea>
-                <input type="submit" value="Submit">
+                <textarea class="projectDeets infoForm" placeholder="This idea is great!" type ="text" name="message"></textarea>
+                <input type="submit" value="Submit"><input type="reset" value="Clear">
             </form>
         </section> 
  <section>
