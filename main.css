@@ -396,8 +396,9 @@ li.gallerySelector:hover .galleryDisc {
 
 .galleryProjectLinks{
   display: flex;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }
 
 .galleryProjectLinks a:hover{
