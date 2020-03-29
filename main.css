@@ -5,7 +5,7 @@
 }
 
   #main{
-    height:1000px;
+    height:1030px;
   }
 
   nav {
@@ -42,9 +42,21 @@
     padding: 0;
 }
 
-.galleryProjectLinks{
+  .galleryProjectLinks{
   font-size: 10px;
-}
+  }
+
+  .topInfoBox{
+ flex-direction: column;
+  }
+
+  .smallInfoBox {
+    width:30%;
+  }
+
+  .contactInfoLabel {
+    padding-top: 20px;
+  }
 
   footer {
     font-size: 10px;
@@ -54,10 +66,6 @@
     width:5%;
   }
   
-  .wave{
-    margin-top: -100px;
-  }
-
 }
 
 
@@ -115,6 +123,14 @@
     margin-left:3%;
     padding: 20px;
 }
+
+  .smallInfoBox {
+    width:30%;
+  }
+
+  .contactInfoLabel {
+    padding-top: 20px;
+  }
 
   footer {
     font-size: 14px;
@@ -194,8 +210,18 @@
     padding: 20px;
 }
 
+  .topInfoBox{
+  align-items: center;
+  justify-content: center;
+  }
+
+  .smallInfoBox {
+    width:30%;
+  }
+
   .contactInfoLabel {
     font-size: 24px;
+    padding-top: 0px;
   }
 
   footer {
@@ -419,19 +445,14 @@ li.gallerySelector:hover .galleryDisc {
 .topInfoBox{
   padding-bottom: 30px;
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .projectDeets{
   height: 200px;
 }
 
-.smallInfoBox {
-  width:30%;
-}
+
 .contactInfoLabel {
-  padding-top: 20px;
   padding-right: 20px;
   padding-left: 20px;
 }
