@@ -15,6 +15,6 @@ show('.home', '.homePage')
 show('.bio', '.bioPage')
 show('.skills', '.skillsPage')
 show('.gallery', '.galleryPage')
-show('.contactInfo', '.contactInfoPage')
+//show('.contactInfo', '.contactInfoPage')
 
 //<canvas data-processing-sources="waves.pde"></canvas>
