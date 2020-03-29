@@ -9,6 +9,8 @@ function show(sectionButton, sectionSelector) {
     })
 }
 
+
+
 show('.home', '.homePage')
 show('.bio', '.bioPage')
 show('.skills', '.skillsPage')
