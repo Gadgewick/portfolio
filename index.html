@@ -150,10 +150,12 @@
         <section class="contactInfoPage content hidden">
             <h1 class="title">Contact Information</h1>
             <form action="contactForm.php" method="post">
-                <label class="contactInfoLabel" for="name">Name:</label>
-                <textarea class="name infoForm" placeholder="John Doe" name="name"></textarea>
-                <label class="contactInfoLabel" for="email">Email:</label>
-                <textarea class="email infoForm" placeholder="xyzemail@somewhere.com" name="email"></textarea>
+                <div class="topInfoBox">
+                    <label class="contactInfoLabel" for="name">Name:</label>
+                    <textarea class="name infoForm smallInfoBox" placeholder="John Doe" name="name"></textarea>
+                    <label class="contactInfoLabel" for="email">Email:</label>
+                    <textarea class="email infoForm smallInfoBox" placeholder="xyzemail@somewhere.com" name="email"></textarea>
+                </div>
                 <label class="contactInfoLabel" for="email">Subject:</label>
                 <textarea class="subject infoForm" placeholder="Amazzing Idea!" name="subject"></textarea>
                 <label class="contactInfoLabel" for="projectDeets">Project Details:</label>
