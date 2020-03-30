@@ -2,7 +2,7 @@
 function show(sectionButton, sectionSelector) {
     $('.navbar').on('click', sectionButton, function() {
         event.preventDefault();
-        console.log(sectionButton + ' button clicked');
+        //console.log(sectionButton + ' button clicked');
         $('.content').hide();
         $(sectionSelector).fadeIn();
         window.scrollTo(0, 0);
